@@ -1,0 +1,67 @@
+@import url("./css/root.css");
+@import url("./css/fonts.css");
+@import url("./css/global-scope.css");
+@import url("./css/navbar.css");
+@import url("./css/welcome-gallery.css");
+@import url("./css/event-gallery.css");
+@import url("./css/event-slider.css");
+@import url("./css/club-gallery.css");
+@import url("./css/music-player.css");
+@import url("./css/music-slider.css");
+@import url("./css/video-slider.css");
+@import url("./css/team-slider.css");
+@import url("./css/blog-gallery.css");
+@import url("./css/newletter-section.css");
+@import url("./css/blog-list.css");
+@import url("./css/single-blog.css");
+@import url("./css/footer.css");
+@import url("./css/contact.css");
+@import url("./css/forms.css");
+
+
+body {
+  height: 100%;
+  width: 100%;
+  /* padding: 1rem; */
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, 'Ubuntu', sans-serif;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  background-color: var(--blackColor);
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+* {
+ box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.white-block, 
+
+.link-icons, .fa-utensils {
+  background-color: white;
+}
+
+
+/* ************************************************************************************
+****************************** GENERIC DETAILS  *********************************************** */
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+
+

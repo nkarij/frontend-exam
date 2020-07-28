@@ -1,0 +1,206 @@
+/* ************************************************************************************
+****************************** MUSIC PLAYER ******************************************** */
+
+.music-player-section {
+    width: 100%;
+    
+  
+  }
+  
+  .player-image-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+  }
+  
+  .player-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  
+  .audio-controller {
+    width: 100%;
+    height: 40vh;
+    padding: 0 10%;
+  
+  }
+
+  .track-time-desktop { display: none;}
+  
+  .audio-range-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 0;
+    /* margin: 20px; */
+  }
+  
+  .audio-range-wrapper:nth-of-type(1) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+    /* margin: 20px; */
+  }
+  
+  .audio-range-wrapper:nth-of-type(2) {
+    padding: 30px 0 0 0;
+    /* margin: 20px; */
+  }
+  
+  .audio-range-wrapper:nth-of-type(3) {
+    padding: 5px 0 30px 0;
+    /* margin: 20px; */
+  }
+  
+  
+  #track-range, #sound-range {
+    display: block;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 400px; /* Full-width */
+    height: 2px; /* Specified height */
+    background-color: var(--redColor); /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    margin: 0;
+  }
+  
+  #track-range::-webkit-slider-thumb,
+  #sound-range::-webkit-slider-thumb
+   {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 10px; /* Set a specific slider handle width */
+    height: 10px; /* Slider handle height */
+    background: var(--whiteColor);  /* Green background */
+    border-radius: 50%;
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  #track-range:hover, #sound-range:hover {
+    opacity: 0.7; /* Fully shown on mouse-over */
+  }
+  
+  .track-time, .track-time-desktop {
+    color: var(--whiteColor);
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  .sound-speaker {
+    color: white;
+    height: 15px;
+    width: 15px;
+  }
+  
+  .track-filler {
+    flex: 10;
+  }
+  
+  .track-play {
+    color: white;
+    height: 30px;
+    width: 30px;
+    align-self: flex-end;
+  }
+  
+  .track-shuffle {
+    color: white;
+    height: 20px;
+    width: 20px;
+  }
+  
+
+  @media screen and (min-width: 700px) {
+
+    .audio-controller {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+      padding: 0 0 0 10%;
+    }
+
+    .audio-controller .sub-heading {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    #track-range {
+      width: 100%
+    }
+
+    #sound-range {
+      width: 200px;
+    }
+
+    .audio-controls {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .audio-range-wrapper {
+      display: flex;
+      width: 40%;
+      /* width: 150px; */
+    }
+
+    .audio-range-wrapper.reset {
+      justify-content: space-between;
+      width: 60%;
+    }
+
+    .audio-range-wrapper.reset * {
+      display: block;
+      font-size: 20px;
+    }
+
+    .track-time {display: none; }
+    .track-time-desktop { 
+      display: block;
+      width: 60%;
+      font-size: 20px;
+    }
+
+    .audio-range-wrapper label {
+      display: inline-block;
+    }
+
+    .audio-range-wrapper:nth-of-type(1) {
+      width: 100%;
+    }
+
+    .track-filler {
+      flex: 0;
+    }
+
+      
+  .sound-speaker {
+    height: 20px;
+    width: 20px;
+  }
+
+  .track-play {
+    /* color: white; */
+    height: 40px;
+    width: 40px;
+  }
+
+  .track-shuffle {
+    height: 30px;
+    width: 30px;
+    margin-right: 1.5rem;
+  }
+  
+
+    /* #soundrange */
+
+
+  }
+  
+
+  

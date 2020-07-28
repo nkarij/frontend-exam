@@ -1,0 +1,98 @@
+/******************************************************************* */
+ 
+  .blog-gallery-section {
+    padding: 1rem;
+
+  }
+
+  .blog-gallery-section a {
+    display: block;
+    height: 100%;
+  }
+
+  .blog-gallery {
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+    padding: 5px;
+    margin-bottom: 4rem;
+  }
+
+  .blog__image-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 1rem auto;
+  }
+  
+  .blog__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* BLOG BAR AREA */
+
+  .blog-bar {
+
+  }
+
+  .blog-bar__title {
+    text-align: center;
+    font-size: var(--subHeading);
+    color: var(--beigeColor);
+    font-weight: 400;
+    margin: .5rem;
+  }
+
+  .blog-bar-details-section {
+    display: flex;
+    font-size: var(--standardFontSize);
+    color: var(--redColor);
+  }
+
+  .blog-bar-details-section * {
+    margin: 0;
+  }
+
+  .blog-bar__text {
+    font-size: var(--standardFontSize);
+    color: var(--beigeColor);
+    font-weight: 400;
+    line-height: var(--smallLineHeight);    
+  }
+
+  .truncate--text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: var(--smallLineHeight);    
+    max-height: 75px;     
+    -webkit-line-clamp: 3; /* Write the number of 
+                              lines you want to be 
+                              displayed */
+    -webkit-box-orient: vertical;
+  }
+
+
+
+  @media screen and (min-width: 700px) {
+
+    .blog-gallery-section {
+      
+      display: flex;
+      width: 80%;
+      height: 100%;
+      margin: auto;
+    }
+
+    .blog-bar-details-section {
+      font-size: 10px;
+    }
+
+    .blog-bar__title {
+      text-align: start;
+      margin: .5rem 0;
+    }
+
+  }
+  

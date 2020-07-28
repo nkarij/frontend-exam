@@ -1,0 +1,4 @@
+export const SIGN_IN_SUCCES = 'SIGN_IN_SUCCES';
+export const SIGN_IN_ERROR = 'SIGN_IN_ERROR';
+export const SIGN_OUT_SUCCES = 'SIGN_OUT_SUCCES';
+export const SIGN_OUT_ERROR = 'SIGN_OUT_ERROR';

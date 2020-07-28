@@ -1,0 +1,170 @@
+
+/* ************************************************************************************
+****************************** GALLERY *********************************************** */
+
+#welcome-gallery {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+  }
+
+  .welcome-gallery-flip-section {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .welcome-gallery__intro {
+  
+  }
+
+  .welcome__image-wrapper {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+  }
+  
+  .welcome__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* display: none; */
+  }
+  
+  .welcome__overlay {
+    position: relative;
+    position: absolute; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--blackColor); /* Black background with opacity */
+    transition: opacity 1.5s ease-out;
+    opacity: 0;
+    padding: 6rem 2rem;
+    
+  }
+  
+  .welcome__overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 0px 0 0;
+    border-color: var(--redColor) transparent transparent transparent;
+    transition: border-width .5s;
+    /* z-index: 3; */
+  }
+  
+  .welcome__overlay:hover::before {
+    border-width: 5rem 5rem 0 0;
+  }
+  
+  .welcome__overlay::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 0px 0px;
+    border-color: transparent transparent var(--redColor) transparent;
+    transition: border-width .5s;
+    z-index: 3;
+  }
+  
+  .welcome__overlay:hover::after {
+    border-width: 0 0 5rem 5rem;
+  }
+  
+  .welcome__overlay-icon {
+    height: 3rem;
+    width: 3rem;
+    color: var(--redColor); 
+  }
+  
+  .welcome__overlay-title {
+    font-size: var(--subHeading);
+    color: var(--beigeColor);
+    opacity: 0.7;
+    transition: opacity 1.5s ease-in-out;
+    margin: 1.5rem;
+    letter-spacing: var(--bigLetterSpacing);
+    font-weight: 400;
+  }
+  
+  .welcome__overlay-sub {
+    font-size: var(--standartFontSize);
+    color: var(--beigeColor);
+    letter-spacing: var(--bigLetterSpacing);
+    opacity: 0.7;
+    transition: opacity 1.5s ease-in-out;
+    font-weight: lighter;
+    line-height: 1.6;
+  } 
+  
+  
+  /* ************************************************************************************
+  ******************************MODIFIERS *********************************************** */
+  
+  
+  .welcome__overlay:hover {
+    display: block;
+    opacity: 1;
+  }
+
+
+  /* ************************************************************************************
+  ****************************** MEDIA QUERIES *********************************************** */
+
+@media screen and (min-width: 700px) {
+
+  #welcome-gallery {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: auto;
+    padding: 0;
+  }
+
+  .welcome-gallery-flip-section {
+    width: calc(75vw / 3);
+    height: auto;
+
+  }
+
+  .welcome__overlay {
+    padding: 2.5rem 2rem;
+  }
+
+  .welcome__overlay-title {
+
+  }
+
+  .welcome__overlay-sub {
+    font-size: 12px;
+    letter-spacing: normal;
+  }
+
+  .welcome__overlay:hover::before {
+    border-width: 4rem 4rem 0 0;
+  }
+
+  .welcome__overlay:hover::after {
+    border-width: 0 0 4rem 4rem;
+  }
+
+  
+
+}
+  

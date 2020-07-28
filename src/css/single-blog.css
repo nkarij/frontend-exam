@@ -1,0 +1,156 @@
+#detail-screen-page {
+    height: 100%;
+    width: 100%;
+    /* padding: 1rem; */
+}
+
+#detail-screen-page .testemonial-wrapper {
+    margin-bottom: 2.5rem;
+}
+
+.comment-section {
+    height:100%;
+    width: auto;
+}
+
+.comment-section::after {
+    content: "";
+    clear: both;
+    display: table;
+    visibility: hidden;
+    height: 0;
+}
+
+.comment-section .section-heading {
+    text-align: left;
+}
+
+.testemonial-wrapper:nth-of-type(even) {
+    padding-left: 30px;
+}
+
+.comment-wrapper:nth-of-type(odd){
+    padding-left: 30px;
+}
+
+.comment__image-wrapper {
+    float: left;
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.comment__image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.reply-button {
+    float: right;
+    font-family: var(--ubuntuFont);
+    border: none;
+    height: var(--buttonHeight);
+    width: 120px;
+    font-size: var(--smallHeading);
+    line-height: var(--smallLineHeight);
+    letter-spacing: var(--bigLetterSpacing);
+    font-weight: 500;
+    text-align: center;
+    color: var(--whiteColor);
+    border-top: 2px solid var(--whiteColor);
+    border-bottom: 2px solid var(--whiteColor);
+    background-color: var(--blackColor);
+    margin-right: 1rem;
+}
+
+.comment::after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+.comment-bar {
+
+}
+
+.comment-date {
+    color: var(--redColor);
+}
+
+/* COMMENT FORM */
+
+.comment-form__input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form__label {
+    color: var(--whiteColor);
+}
+
+
+
+/* .blog-list-section {
+    width: 80%;
+    margin: auto;
+} */
+
+
+@media screen and (min-width: 700px) {
+
+    #detail-screen-page .blog-gallery, #detail-screen-page .comment-section {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+
+    #detail-screen-page .comment-section  {
+        margin-bottom: 3rem;
+    }
+
+    #detail-screen-page #comment-form .section-heading {
+       display: block;
+       text-align: start;
+    }   
+
+    #detail-screen-page #comment-form {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }   
+
+    #detail-screen-page #comment-form .section-heading__text {
+        padding: 1.5rem 0;
+    }   
+
+    #detail-screen-page .comment__image-wrapper  {
+        width: calc(100% / 6);
+        height: calc(100% / 6);
+
+    }
+
+    #detail-screen-page .team-bar__title, .comment-date, .team-bar__text  {
+        margin: .5rem 0;
+    }
+
+    #detail-screen-page .comment-bar__info  {
+        margin-bottom: 1rem;
+    }
+
+    #detail-screen-page #comment-form .comment-form__input-container:nth-child(2) {
+        display: inline-flex;
+        width: 45%;
+        margin-right: 5%;
+    }
+    #detail-screen-page #comment-form .comment-form__input-container:nth-child(3) {
+        display: inline-flex;
+        width: 45%;
+        margin-left: 5%;
+    }
+
+}

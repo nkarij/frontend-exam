@@ -1,0 +1,142 @@
+/******************************************************************* */
+  
+  .team-slider {
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .team-slide {
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+  }
+
+  .team__image-wrapper {
+    width: 40vw;
+    height: 40vw;
+    margin: auto;
+  }
+  
+  .team__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .team-slider-dots {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+  }
+
+  .team-slider-dot {
+    /* display: none; */
+    position: relative;
+    /* margin-left: 10px; */
+    height: 20px;
+    width: 20px;
+    margin: 1rem;
+
+  }
+
+  .team-slider-dot::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: -2px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    margin: 0 2px;
+    background-color: var(--whiteColor);
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    outline: 1px solid grey; 
+  }
+  
+  .team-slider-dot:checked::before {
+    background-color: var(--redColor);
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+
+  /* TEAM BAR AREAM */
+
+  .team-bar {
+    text-align: center;
+    padding: 0 15%;
+  }
+
+  .team-bar__info {
+    margin-bottom: 20px;
+  }
+
+  .team-bar__title, .team-bar__text {
+    font-size: 25px;
+    letter-spacing: var(--bigLetterSpacing);
+    font-weight: 400;
+    color: var(--beigeColor);
+    opacity: 0.9;
+    margin: 1.5rem auto;
+  }
+
+  .team-bar__text {
+    font-size: var(--standardFontSize);
+    opacity: 0.7;
+  }
+
+  .team-bar .some-list {
+    margin-top: 10px;
+    margin-bottom: 2rem;
+  }
+
+  .team-bar .some-list * {
+    width: var(--reactSome);
+    height: var(--reactSome);
+  }
+
+
+  @media screen and (min-width: 700px) {
+
+    .team-bar {
+      padding: 0 20%;
+    }
+
+    .team__image-wrapper {
+      width: calc(100vw / 6);
+      height: calc(100vw / 6);
+    }
+
+    .team-bar .some-list {
+      justify-content: center;
+    }
+
+    .team-bar .some-list__item {
+      margin: 1rem;
+    }
+
+    .team-bar__text {
+      font-size: var(--bigStandard);
+    }
+
+    .team-slider-dots {
+
+    }
+    
+
+    
+  }

@@ -1,0 +1,38 @@
+:root {
+    --remFontSize: 15px;
+    --ubuntuFont :'Ubuntu', sans-serif;
+    --heading : 40px;
+    --standardFontSize : 15px;
+    --bigStandard: 20px;
+    --subHeading : 30px;
+    --mobileSubHeading: 20px;
+    --blackColor : #030203;
+    --whiteColor : #ffffff;
+    --beigeColor : #e0e0e0;
+    --redColor : #ff2a70;
+    --bigLineHeight: 1.1;
+    --medLineHeight : 0.075;
+    --smallLineHeight : 25px;
+    --bigLetterSpacing: 0.075em;
+    --smallLetterSpacing: 22px;
+    --reactIcon: 50px;
+    --reactSome: 30px;
+    --whiteArrows: 60px;
+    --sliderSquares: 15px;
+    --triangle: 5rem;
+    --buttonHeight: 40px;
+}
+
+
+@media screen and (min-width: 700px) {
+
+    :root {
+        --standardFontSize : 12px;
+        --subHeading: 20px;
+        --heading : 40px;
+        --pageWidth: 80%;
+        --triangle: 9rem;
+        --reactSome: 40px;
+    }
+
+}

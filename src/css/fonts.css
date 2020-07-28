@@ -1,0 +1,93 @@
+html {
+    font-family: var(--ubuntuFont);
+    font-size: var(--remFontSize);
+}
+
+.sub-heading {
+    
+}
+
+.small-heading {
+    font-family: var(--ubuntoFont);
+    font-size: var(--smallHeading);
+    line-height: var(--smallLineHeight);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--whiteColor);
+    margin: 0;
+}
+
+
+.section-heading, .section-heading-multi {
+    text-align: center;
+    margin: auto;
+}
+
+
+.section-heading__text, .section-heading-multi__text {
+    font-family: var(--ubuntuFont);
+    font-size: var(--heading);
+    line-height: var(--bigLineHeight);
+    color: var(--whiteColor);
+    letter-spacing: var(--bigLetterSpacing);
+    font-weight: 500;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.section-heading__detail, .section-heading-multi__detail {
+    color: var(--redColor);
+}
+
+.section-seperator.newsletter .small-heading {
+    font-size: 20px;
+    letter-spacing: var(--bigLetterSpacing);
+    font-weight: 400;
+    color: var(--whiteColor);
+    opacity: 0.8;
+    margin: .5rem auto;
+}
+
+
+.newsletter-tagline * {
+    font-size: var(--standardFontSize);
+    letter-spacing: 0.5px;
+    color: var(--whiteColor);
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+
+.newsletter-tagline__detail {
+    color: var(--redColor);
+    margin-left: 5px;
+}
+
+.newsletter__label {
+    font-size: var(--standardFontSize);
+    font-weight: 700;
+    color: var(--whiteColor);
+    /* line-height: var(--smallLineHeight); */
+    letter-spacing: var(--bigLetterSpacing);
+    opacity: 0.8;
+    padding: 1rem 2rem;
+}
+
+.newsletter__button {
+    font-size: var(--standardFontSize);
+    font-weight: 700;
+    color: var(--whiteColor);
+    /* line-height: var(--smallLineHeight); */
+    letter-spacing: var(--bigLetterSpacing);
+    opacity: 0.8;
+    padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 700px) {
+
+    .section-heading {
+        display: flex;
+        justify-content: center;
+    }
+
+}

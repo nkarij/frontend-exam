@@ -1,0 +1,108 @@
+/******************************************************************* */
+  
+/* nb se welcome gallery for containeren */
+  .event-slider {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+    /* padding: 1rem; */
+    text-align: center;
+  }
+
+  .event-gallery {
+    position: relative;
+    display: none;
+    height: 100%;
+  }
+
+  .event-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .event-slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+  }
+
+  .event-slider-dot {
+    position: relative;
+    margin: 1rem;
+    /* margin-left: 30px; */
+  }
+
+  .event-slider-dot::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: -20%;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    margin: 0 2px;
+    background-color: var(--whiteColor);
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    outline: 1px solid grey; 
+  }
+  
+  .event-slider-dot:checked::before {
+    background-color: var(--redColor);
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+
+
+  /* ******************** */
+
+@media screen and (min-width: 700px) {
+  .event-slider {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .event-gallery {
+    width: 40%;
+  }
+
+  .event-slider-dots {
+    width: 30%;
+  }
+
+  .event-slider-dot {
+    margin: 1.5rem;
+  }
+
+  .event-bar {
+    height: auto;
+  }
+
+  .event-slider-dot:nth-of-type(odd) {
+    /* position: relative; */
+    /* margin-left: 30px; */
+    display: none;
+    
+  }
+
+  .event-slider-dot:last-of-type {
+    display: none;
+  }
+
+}
+  
+
